@@ -34,4 +34,4 @@ window.addEventListener('pageshow', function (event) {
   }
   var fader = document.getElementById('fader');
   fader.classList.remove('fade-in');
-});
+})

@@ -1,12 +1,15 @@
+h2 {
+    margin-top: 130px;
+}
 header {
     background-image: url(img/BMW%20-%20Front%20Page.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
-
 .portfolio-nav {
+    margin-top: 40px;
     object-fit: cover;
     width: 80%;
     height: 350px; 
-}
+} 

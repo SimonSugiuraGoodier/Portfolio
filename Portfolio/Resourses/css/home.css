@@ -4,3 +4,9 @@ header {
     background-position: center;
     height: 100vh;
 }
+
+.portfolio-nav {
+    object-fit: cover;
+    width: 80%;
+    height: 350px; 
+}

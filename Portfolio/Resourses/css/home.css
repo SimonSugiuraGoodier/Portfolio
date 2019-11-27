@@ -7,9 +7,47 @@ header {
     background-position: center;
     height: 100vh;
 }
+/*
 .portfolio-nav {
     margin-top: 40px;
     object-fit: cover;
     width: 80%;
     height: 350px; 
 } 
+*/
+.automotive {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+    height: 400px;
+    
+} 
+.after {
+    transition: .2s ease; 
+}
+.after h3 {
+    font-size: 200%;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: right;
+}
+.automotive img {
+    position: relative;
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+} 
+/*need to fix the div so it only hilights when on the image not the whold div*/
+.automotive .after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    display: none;
+    color: #ffffff;
+}
+.automotive:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .25)
+}

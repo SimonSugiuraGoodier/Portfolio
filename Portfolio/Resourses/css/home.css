@@ -48,6 +48,7 @@ header {
     height: 100%;
     display: none;
     color: #ffffff;
+    transition: 0.7s;
 }
 .navigation-img:hover .after {
     display: block;

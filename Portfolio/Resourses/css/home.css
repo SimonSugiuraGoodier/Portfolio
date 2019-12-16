@@ -3,10 +3,6 @@ h2 {
     font-weight: bold;
     margin-top: 130px;
 }
-a {
-
-}
-
 header {
     background-image: url(img/BMW%20-%20Front%20Page.jpg);
     background-size: cover;
@@ -58,3 +54,15 @@ header {
 .padding-h2 {
     margin-bottom: 40px;
 }
+ .padding-footer {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+ .social-links {
+    float: left;
+    list-style-type: none;
+}
+ .social-links li {
+    display: inline-block;
+    margin-right: 10px;
+} 

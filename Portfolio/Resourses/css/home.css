@@ -38,7 +38,7 @@ header {
     width: 100%;
     height: 100%;
     display: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 .navigation-img:hover .after {
     display: block;
@@ -54,15 +54,42 @@ header {
 .padding-h2 {
     margin-bottom: 40px;
 }
+footer {
+    background-color: #242424;
+}
  .padding-footer {
     padding-top: 5%;
     padding-bottom: 1%;
 }
- .social-links {
-    float: left;
+ .footer-nav-left {
     list-style-type: none;
+    float: left;
 }
- .social-links li {
+.footer-nav-right {
+    list-style-type: none;
+    float: right;
+}
+.footer-nav-left li,
+.footer-nav-right li {
     display: inline-block;
     margin-right: 10px;
 } 
+.footer-nav-left li a:link, 
+.footer-nav-left li a:visited,
+.footer-nav-right li a:link, 
+.footer-nav-right li a:visited  {
+  padding: 3px 0;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 100%;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+} 
+.footer-nav-left li a:hover,
+.footer-nav-left li a:active,
+.footer-nav-right li a:hover, 
+.footer-nav-right li a:active {
+  color: rgba(102, 29, 170, 0.788);
+}

@@ -72,7 +72,7 @@ footer {
 .footer-nav-left li,
 .footer-nav-right li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 35px;
 } 
 .footer-nav-left li a:link, 
 .footer-nav-left li a:visited,
@@ -91,5 +91,5 @@ footer {
 .footer-nav-left li a:active,
 .footer-nav-right li a:hover, 
 .footer-nav-right li a:active {
-  color: rgba(102, 29, 170, 0.788);
+  color: #febd09;
 }

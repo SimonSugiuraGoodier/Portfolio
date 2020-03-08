@@ -61,23 +61,16 @@ footer {
     padding-top: 5%;
     padding-bottom: 1%;
 }
- .footer-nav-left {
+ .footer-nav {
     list-style-type: none;
     float: left;
 }
-.footer-nav-right {
-    list-style-type: none;
-    float: right;
-}
-.footer-nav-left li,
-.footer-nav-right li {
+.footer-nav li {
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 15px;
 } 
-.footer-nav-left li a:link, 
-.footer-nav-left li a:visited,
-.footer-nav-right li a:link, 
-.footer-nav-right li a:visited  {
+.footer-nav li a:link, 
+.footer-nav li a:visited {
   padding: 3px 0;
   color: #ffffff;
   text-decoration: none;
@@ -87,9 +80,7 @@ footer {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s;
 } 
-.footer-nav-left li a:hover,
-.footer-nav-left li a:active,
-.footer-nav-right li a:hover, 
-.footer-nav-right li a:active {
+.footer-nav li a:hover,
+.footer-nav li a:active {
   color: #febd09;
 }

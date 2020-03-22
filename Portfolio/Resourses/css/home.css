@@ -63,21 +63,26 @@ footer {
 }
  .footer-nav {
     list-style-type: none;
-    float: left;
+    padding: 0;
+    float: center;
 }
 .footer-nav li {
     display: inline-block;
+    padding: 0;
+    list-style-type: none;
     margin-right: 15px;
 } 
+.footer-nav li p {
+    float: left;
+    padding-top: 5%;
+}
 .footer-nav li a:link, 
 .footer-nav li a:visited {
-  padding: 3px 0;
   color: #ffffff;
   text-decoration: none;
   text-transform: none;
   font-size: 100%;
   font-weight: 500;
-  border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s;
 } 
 .footer-nav li a:hover,

@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="Resourses/css/fade.css">
         <link rel="stylesheet" type="text/css" href="Resourses/css/footer.css">
         <script src="Resourses/js/fadeIn.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
         <title>Simon Sugiura-Goodier</title>
     </head>
@@ -17,11 +18,7 @@
             <script>
                 fadeInPage();
             </script>
-            <!-- For the FB plugin -->
-            <!-- <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0&appId=191039420884&autoLogAppEvents=1"></script> -->
         <header>
-            <!-- Change to single click with title menu, remove Portrait and Porduct -->
             <!--Navigation-->
             <nav class="row">
                 <a class="logo" href="index.html"><img src="Resourses/img/Logo/Logo-Grey.png" alt="logo" class="logo"></a>
@@ -32,13 +29,13 @@
             </nav>
         </header>
 <!-- Portfolio Secton -->
-        <section>
+        <!-- <section>
             <div class="row">
                 <div class="row">
-                <div class="col span-2-of-2">
-                <h2>Portfolio</h2>
-<!--                Fix the fade in-->
-                <div class="navigation-img">
+                 <div class="col span-2-of-2"> -->
+                
+               <!-- Fix the fade in  -->
+                <!-- <div class="navigation-img">
                     <img src="Resourses/img/Cars/Yellow%20TT-2-2.jpg">
                     <a href="automotive.html"><div class="after" ><h3>Automotive</h3></div></a>
                 </div>
@@ -53,36 +50,55 @@
                 </div>
                 </div>
             </div>
-        </section> 
+        </section> -->
+         <!-- Automotive Portfolio Seciton  -->
+        <section>
+            <h2>Automotive</h2>
+            <div class="automotive">
+                
+                <div id="automotive-images" class="kert"></div>
+                <div class="automovie-content">
+                <ul>
+                    <li rel="jib35"><a href="#">Jib's Edition 35</a></li>
+                    <li rel="jibr34"><a href="jibr34.html">Jib's R34</a></li>
+                    <li rel="alexgti"><a href="alexgti.html">Alex's Golf GTI</a></li>
+                    <li rel="gavgti"><a href="gavgti.html">Gav's Polo GTI</a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                $('ul li').hover(function(){
+                    $('#automotive-images').removeClass().addClass(
+                        $(this).attr('rel'));
+                    $(this).addClass('active').siblings()
+                        .removeClass('active');
+                });
+            </script>
+        </section>
 <!-- About me -->
         <section>
             <div class="row">
                 <div class="row">
                     <h2 class="padding-h2">About me</h2>
-                <div class="section span-1-of-3">
-                    <img class="self" src="Resourses/img/Portraiture/DSC_2432.jpg" alt="Picture of me">
+                    <div class="section span-1-of-3">
+                        <img class="self" src="Resourses/img/Portraiture/DSC_2432.jpg" alt="Picture of me">
+                    </div>
+                    <div class="col span-2-of-4">
+                        <p>Some background to my photographic journey. During high school I picked up a camera photographing my friends skateboarding using my dad’s film Olympus, I was hooked.<br>
+                        <br>
+                        From then on, I developed my skills by taking photography at 6th form. Learning the basics of composition and some photoshop skills. During my time at Uni, I would take photos of Greenwich.<br>
+                        <br>
+                        During my final year at Uni, I focused on automotive photography learning from scratch how to use photoshop and Lightroom effectively. During the past year, I have been working on my automotive Instagram (@refine.photo) whilst shooting for private clients.<br>
+                        <br>
+                        This is just the start of my journey there is much more that I want to learn and refine, particularly my editing and photographic skills across a whole range of disciplines and further enhance my style with a range of different equipment.
+                        </p>
+                    </div>
                 </div>
-                <div class="col span-2-of-4">
-                    <p>Some background to my photographic journey. During high school I picked up a camera photographing my friends skateboarding using my dad’s film Olympus, I was hooked.<br>
-                    <br>
-                    From then on, I developed my skills by taking photography at 6th form. Learning the basics of composition and some photoshop skills. During my time at Uni, I would take photos of Greenwich.<br>
-                    <br>
-                    During my final year at Uni, I focused on automotive photography learning from scratch how to use photoshop and Lightroom effectively. During the past year, I have been working on my automotive Instagram (@refine.photo) whilst shooting for private clients.<br>
-                    <br>
-                    This is just the start of my journey there is much more that I want to learn and refine, particularly my editing and photographic skills across a whole range of disciplines and further enhance my style with a range of different equipment.
-                    </p>
-                </div>
-            </div>
             </div>
         </section>
+<!-- Footer -->
             <footer class="padding-footer">
                 <div class="row">
                     <div class="row">
-                        <!-- <div class="col span-1-of-2">
-                            <P>
-                                add some shit here
-                            </P>
-                        </div> -->
                         <div class="col span-1-of-2">
                             <ul class="footer-nav">
                                 <Li><H3>Connect with me</H3></Li></br></br>

@@ -1,7 +1,6 @@
 h2 {
-    font-size: 350%;
+    font-size: 300%;
     font-weight: bold;
-    margin-top: 130px;
 }
 header {
     background-image: url(img/BMW%20-%20Front%20Page.jpg);
@@ -43,6 +42,86 @@ header {
 .navigation-img:hover .after {
     display: block;
     background: rgba(0, 0, 0, .25)
+}
+section h2 {
+    padding-top: 6%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+.automotive {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+}
+.automovie-content{
+    position: absolute;
+    padding-bottom: 2%;
+    padding-right: 3%;
+    bottom: 0;
+    right: 0;
+}
+.automotive ul {
+    padding: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+.automotive ul li {
+    padding-right: 7px;
+    padding-bottom: 4%;
+    position: relative;
+    list-style: none;
+}
+.automotive ul li a:link, 
+.automotive ul li a:visited {
+    padding: 0;
+    color: #febd09;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 100%;
+    font-weight: 500;
+    transition: 0.7s;
+} .automotive ul li a:hover,
+  .automotive ul li.active a:active {
+    color: #dedede;
+} 
+.automotive #automotive-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.automotive #automotive-images.kert {
+    background-image: url(img/Cars/Kert-Mountin-Edit.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.automotive #automotive-images.jib35 {
+    background-image: url(img/Cars/jib-landscape.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.automotive #automotive-images.jibr34 {
+    background-image: url(img/Cars/jibr34-fontpage.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.automotive #automotive-images.alexgti {
+    background-image: url(img/Cars/alex-fronpaage.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.automotive #automotive-images.gavgti {
+    background-image: url(img/Cars/gav-frontpage.jpg);
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
 }
 .self {
     float: left;

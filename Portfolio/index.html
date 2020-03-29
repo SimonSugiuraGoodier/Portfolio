@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="Resourses/css/fade.css">
         <link rel="stylesheet" type="text/css" href="Resourses/css/footer.css">
         <script src="Resourses/js/fadeIn.js"></script>
+        <script src="Resourses/js/switchClass.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
         <title>Simon Sugiura-Goodier</title>
@@ -32,7 +33,6 @@
         <section>
             <h2>Automotive</h2>
             <div class="automotive">
-                
                 <div id="automotive-images" class="kert"></div>
                 <div class="automovie-content">
                 <ul>
@@ -43,12 +43,7 @@
                 </ul>
             </div>
             <script type="text/javascript">
-                $('ul li').hover(function(){
-                    $('#automotive-images').removeClass().addClass(
-                        $(this).attr('rel'));
-                    $(this).addClass('active').siblings()
-                        .removeClass('active');
-                });
+                switchClass($('ul li'), $('#automotive-images'), $(this));
             </script>
         </section>
 <!-- About me -->

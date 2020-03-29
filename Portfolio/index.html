@@ -30,20 +30,23 @@
             </nav>
         </header>
          <!-- Automotive Portfolio Seciton  -->
-        <section>
+        <section id="automotive-portfolio">
             <h2>Automotive</h2>
             <div class="automotive">
                 <div id="automotive-images" class="kert"></div>
                 <div class="automovie-content">
-                <ul>
+                <ul class="automotive-img-change">
                     <li rel="jib35"><a href="#">Jib's Edition 35</a></li>
                     <li rel="jibr34"><a href="jibr34.html">Jib's R34</a></li>
                     <li rel="alexgti"><a href="alexgti.html">Alex's Golf GTI</a></li>
                     <li rel="gavgti"><a href="gavgti.html">Gav's Polo GTI</a></li>
                 </ul>
             </div>
+            <!-- fix this to only funcition when hoverd over specific section= -->
             <script type="text/javascript">
-                switchClass($('ul li'), $('#automotive-images'), $(this));
+            $("ul.automotive-img-change").hover(function(){ 
+                switchClass( $('ul','li' ), $('#automotive-images'), $(this)) ;
+            });
             </script>
         </section>
 <!-- About me -->

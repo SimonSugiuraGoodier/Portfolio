@@ -29,24 +29,54 @@
                 </ul>
             </nav>
         </header>
-         <!-- Automotive Portfolio Seciton  -->
-        <section id="automotive-portfolio">
+<!-- Automotive Portfolio Seciton  -->
+        <section>
             <h2>Automotive</h2>
             <div class="automotive">
                 <div id="automotive-images" class="kert"></div>
                 <div class="automovie-content">
-                <ul class="automotive-img-change">
-                    <li rel="jib35"><a href="#">Jib's Edition 35</a></li>
-                    <li rel="jibr34"><a href="jibr34.html">Jib's R34</a></li>
-                    <li rel="alexgti"><a href="alexgti.html">Alex's Golf GTI</a></li>
-                    <li rel="gavgti"><a href="gavgti.html">Gav's Polo GTI</a></li>
+                <ul>
+                    <li rel="jib35" class="automotive-img-change"><a href="#">Jib's Edition 35</a></li>
+                    <li rel="jibr34" class="automotive-img-change"><a href="jibr34.html">Jib's R34</a></li>
+                    <li rel="alexgti" class="automotive-img-change"><a href="alexgti.html">Alex's Golf GTI</a></li>
+                    <li rel="gavgti" class="automotive-img-change"><a href="gavgti.html">Gav's Polo GTI</a></li>
+                </ul>
+            </div>
+            <!-- make reusable -->
+            <script type="text/javascript">
+                // function switchClass() {
+                    $('li.automotive-img-change').hover(function(){
+                        $('#automotive-images').removeClass().addClass(
+                            $(this).attr('rel'));
+                        $(this).addClass('active').siblings()
+                    .removeClass('active');
+                    });
+                // }
+            </script>
+        </section>
+<!-- Automotive Portfolio Seciton  -->
+        <section>
+            <h2>Product</h2>
+            <div class="product">
+                <div id="product-images" class=""></div>
+                <div class="product-content">
+                <ul>
+                    <li rel="jib35" class="product-img-change"><a href="#">Jib's Edition 35</a></li>
+                    <li rel="jibr34" class="product-img-change"><a href="jibr34.html">Jib's R34</a></li>
+                    <li rel="alexgti" class="product-img-change"><a href="alexgti.html">Alex's Golf GTI</a></li>
+                    <li rel="gavgti" class="product-img-change"><a href="gavgti.html">Gav's Polo GTI</a></li>
                 </ul>
             </div>
             <!-- fix this to only funcition when hoverd over specific section= -->
             <script type="text/javascript">
-            $("ul.automotive-img-change").hover(function(){ 
-                switchClass( $('ul','li' ), $('#automotive-images'), $(this)) ;
-            });
+                // function switchClass() {
+                    $('li.product-img-change').hover(function(){
+                        $('#product-images').removeClass().addClass(
+                            $(this).attr('rel'));
+                        $(this).addClass('active').siblings()
+                    .removeClass('active');
+                    });
+                // }
             </script>
         </section>
 <!-- About me -->

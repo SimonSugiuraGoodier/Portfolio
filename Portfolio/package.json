@@ -2,6 +2,6 @@
     "name": "example-project",
     "version": "0.1.0",
     "devDependencies": {
-        "grunt": "~1.3.0"
+        "grunt": "~1.5.3"
     }
 }
